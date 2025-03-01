@@ -1,17 +1,24 @@
-import Header from './components/Cabecalho'
+import React, { useState } from 'react'
+import Cabecalho from './components/Cabecalho'
 import Hero from './components/Hero'
-import ListaVagas from './containers/ListaVagas'
-
-import './global.css'
+import FormVagas from './components/FormVagas'
+import ListaVagas from './components/ListaVagas'
+import { GlobalStyle } from './styles/global'
 
 function App() {
+  const [filtro, setFiltro] = useState<string>('')
+
+  const aoPesquisar = (termo: string) => {
+    setFiltro(termo)
+  }
+
   return (
     <>
-      <Header />
+      <GlobalStyle />
+      <Cabecalho />
       <Hero />
-      <div className="container">
-        <ListaVagas />
-      </div>
+      <FormVagas aoPesquisar={aoPesquisar} />
+      <ListaVagas filtro={filtro} />
     </>
   )
 }
