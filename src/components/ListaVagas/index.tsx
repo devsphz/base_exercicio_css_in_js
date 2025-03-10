@@ -1,4 +1,3 @@
-import React from 'react'
 import Vaga from '../Vaga'
 import { ListaVagasContainer } from './styles'
 

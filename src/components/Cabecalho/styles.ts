@@ -9,4 +9,7 @@ export const CabecalhoContainer = styled.header`
 
 export const Titulo = styled.h1`
   margin: 0;
+  font-weight: bold;
+  font-family: Lato, sans-serif;
+  font-size: 32px;
 `

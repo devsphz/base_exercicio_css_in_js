@@ -3,7 +3,7 @@ import Cabecalho from './components/Cabecalho'
 import Hero from './components/Hero'
 import FormVagas from './components/FormVagas'
 import ListaVagas from './components/ListaVagas'
-import { GlobalStyle } from './styles/global'
+import { GlobalStyle, Container } from './styles/global' // Importando o Container
 
 function App() {
   const [filtro, setFiltro] = useState<string>('')
@@ -17,8 +17,10 @@ function App() {
       <GlobalStyle />
       <Cabecalho />
       <Hero />
-      <FormVagas aoPesquisar={aoPesquisar} />
-      <ListaVagas filtro={filtro} />
+      <Container>
+        <FormVagas aoPesquisar={aoPesquisar} />
+        <ListaVagas filtro={filtro} />
+      </Container>
     </>
   )
 }

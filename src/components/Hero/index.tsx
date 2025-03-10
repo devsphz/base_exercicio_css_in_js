@@ -1,14 +1,14 @@
 import React from 'react'
-import { HeroContainer, HeroForm, HeroTitle } from './styles'
+import { HeroContainer, HeroForm, HeroTitle, Container } from './styles'
 
 const Hero = () => (
   <HeroContainer>
     <HeroForm>
-      <div className="container">
+      <Container>
         <HeroTitle>
           As melhores vagas para tecnologia, design e artes visuais.
         </HeroTitle>
-      </div>
+      </Container>
     </HeroForm>
   </HeroContainer>
 )

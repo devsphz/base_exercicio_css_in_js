@@ -35,9 +35,14 @@ export const HeroForm = styled.form`
 export const HeroTitle = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
-  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 32px;
   }
+`
+
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 `
